@@ -20,7 +20,7 @@ pipeline {
     stage('Building image') {
       steps{
         script {
-            sh 'cp /var/lib/jenkins/workspace/Docker-toolkit/toolkit/Dockerfile /var/lib/jenkins/workspace/Docker-toolkit/ '
+            sh 'cp /var/lib/jenkins/workspace/dockerbulid/toolkit/Dockerfile /var/lib/jenkins/workspace/dockerbulid/ '
           dockerImage = docker.build registry
         }
       }
