@@ -7,7 +7,8 @@ RUN apt-get update && \
     apt-get -y upgrade && \
     apt-get install -y \
     sudo \
-    ansible
+    ansible \
+    git
 
 # Create ubuntu user with sudo privileges
 RUN useradd -ms /bin/bash ubuntu && \
