@@ -6,8 +6,8 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
     apt-get -y upgrade && \
     apt-get install -y \
-    
-    sudo
+    sudo \
+    ansible
 
 # Create ubuntu user with sudo privileges
 RUN useradd -ms /bin/bash ubuntu && \
