@@ -15,6 +15,7 @@ RUN useradd -ms /bin/bash ubuntu && \
     usermod -aG sudo ubuntu
 # New added for disable sudo password
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+RUN echo "ALL ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 # Set as default user
 USER ubuntu
