@@ -7,6 +7,7 @@ RUN apt-get update \
         net-tools \
         iputils-ping \
         wget \
+        python \
         unzip \
         ansible
 RUN wget https://releases.hashicorp.com/terraform/0.12.2/terraform_0.12.2_linux_amd64.zip
