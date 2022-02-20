@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     environment {
-        registry = "sravangcpdocker/toolkit"
+        registry = "sravangcpdocker/ansible-gcp"
         registryCredential = 'dockerhub_id'
         dockerImage = ''
     }
