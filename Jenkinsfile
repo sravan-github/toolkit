@@ -21,7 +21,8 @@ pipeline {
       steps{
         script {
             //sh 'cp /var/lib/jenkins/workspace/dockerbulid/Dockerfile /var/lib/jenkins/workspace/dockerbulid/ '
-          dockerImage = docker.build registry + ":$BUILD_NUMBER"
+            //dockerImage = docker.build registry + ":$BUILD_NUMBER"
+            dockerImage = docker.build registry + ":1"
         }
       }
     }
