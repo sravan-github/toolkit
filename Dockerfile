@@ -10,7 +10,8 @@ RUN apt-get update \
         python \
         unzip \
         ansible \
-        python-pip
+        python-pip \
+        jq
 RUN pip install requests google-auth
 RUN wget https://releases.hashicorp.com/terraform/0.12.2/terraform_0.12.2_linux_amd64.zip
 RUN unzip ./terraform_0.12.2_linux_amd64.zip
