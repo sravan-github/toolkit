@@ -15,4 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag tool-kit:$(date +%s)
+      run: |
+         docker tag toolkit-test sravangcpdocker/tool-kit:1.0
+         docker login -u $username -p $password'
+         docker push  sravangcpdocker/tool-kit:1.0
