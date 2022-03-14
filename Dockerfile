@@ -13,8 +13,8 @@ RUN apt-get update \
         python-pip \
         jq
 RUN pip install requests google-auth
-RUN wget https://releases.hashicorp.com/terraform/0.12.2/terraform_0.12.2_linux_amd64.zip
-RUN unzip ./terraform_0.12.2_linux_amd64.zip
+RUN wget https://releases.hashicorp.com/terraform/1.1.7/terraform_1.1.7_linux_amd64.zip
+RUN unzip ./terraform_1.1.7_linux_amd64.zip
 RUN cp -r terraform /usr/local/bin/
 
 CMD ["/bin/bash","-c","tail -f /dev/null"]
