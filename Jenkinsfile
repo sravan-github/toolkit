@@ -10,9 +10,6 @@ pipeline {
         stage('Cloning Git') {
             steps {
                 sh 'git clone https://github.com/sravan-github/toolkit.git'
-                sh 'pwd'
-                sh 'cd toolkit'
-                sh 'ls -ltr'
             }
         }
     
@@ -21,8 +18,8 @@ pipeline {
       steps{
         script {
             //sh 'cp /var/lib/jenkins/workspace/dockerbulid/Dockerfile /var/lib/jenkins/workspace/dockerbulid/ '
-            //dockerImage = docker.build registry + ":$BUILD_NUMBER"
-            dockerImage = docker.build registry + ":new"
+            dockerImage = docker.build registry + ":$BUILD_NUMBER"
+            //dockerImage = docker.build registry + ":new"
         }
       }
     }
