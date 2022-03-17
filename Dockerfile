@@ -13,7 +13,6 @@ RUN apt-get update \
         python-pip \
         jq
 RUN pip install requests google-auth
-RUN pip install gsutil
 RUN wget https://releases.hashicorp.com/terraform/1.1.7/terraform_1.1.7_linux_amd64.zip
 RUN unzip ./terraform_1.1.7_linux_amd64.zip
 RUN cp -r terraform /usr/local/bin/
