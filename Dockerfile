@@ -1,4 +1,4 @@
-FROM camil/gsutil:latest
+FROM ustcmirror/gsutil-rsync:latest
 RUN apt-get update \
      && apt-get install -y openjdk-11-jdk \
         curl \
