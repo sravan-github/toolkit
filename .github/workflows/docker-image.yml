@@ -17,5 +17,5 @@ jobs:
     - name: Build the Docker image
       run: |
          echo "${{ secrets.password }}" | docker login -u "sravangcpdocker" --password-stdin
-         docker image build -t sravangcpdocker/toolkit:new1 .
-         docker push sravangcpdocker/toolkit:new1
+         docker image build -t sravangcpdocker/toolkit:new2 .
+         docker push sravangcpdocker/toolkit:new2
